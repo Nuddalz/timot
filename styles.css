@@ -1,0 +1,249 @@
+:root{
+    --main--textpurple:#8E44AD;
+    --main--backgroundwhite:#FDFEFE;
+    --main-font: 'Oswald', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    font-family: var(--main-font);
+    color: var(--main--textpurple);
+}
+li{
+    list-style: none;
+}
+
+/*---- Navigation ---- */
+.nav{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main--backgroundwhite);
+    z-index: 10;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.nav-link{
+    display: flex;
+}
+.nav-link a{
+    display: block;
+    padding: 2rem;
+    font-weight: 600;
+}
+.nav-link a:hover{
+    background: var(--main--textpurple);
+    color: var(--main--backgroundwhite);
+}
+
+/*----- ABOUT ------*/
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: left;
+    height: 100vh;
+    padding-top: 350px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.about h1{
+    font-family: var(--main-font);
+    font-size: 5rem;
+    color: var(--main--textpurple);
+}
+.about p{
+    font-family: var(--main-font);
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+.aboutme{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 80px;
+}
+.aboutme h1{
+    font-family: var(--main-font);
+    font-size: 2.5rem;
+    color: var(--main--textpurple);
+    padding-top: 50px;
+}
+.aboutme p{
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*------ skills --------*/
+.myskills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+}
+.skill{
+    object-fit: cover;
+    max-width: 350px;
+    max-height: 150px;
+}
+/*------ Projects -------*/
+.projects{
+    margin-left: 100px;
+}
+.projects h2{
+    font-family: var(--main-font);
+    font-size: 2.5rem;
+    color: var(--main--textpurple);
+    padding-top: 200px;
+    max-width: 640px;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    max-width: 1280px;
+    margin-bottom: 6rem;
+    margin: 20px 100px auto 30px;
+}
+.project-image{
+    height: calc(100% - 2rem);
+    width: 100%;
+    object-fit: cover;
+}
+.project-title{
+    background: #8E44AD;
+    color: var(--main--backgroundwhite);
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+/*------- Footer -----*/
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-top: 1px solid rgb(0, 0, 0);
+    margin-top: 100px;
+    color: var(--main--backgroundwhite);
+    background: var(--main--textpurple);
+  }
+  
+  footer > p {
+    margin: 2rem;
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    font-weight: 350;
+  }
+
+  /*------- Contact -------*/
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 7rem;
+    font-family: var(--main-font);
+    padding-top: 400px;
+  }
+
+  .head1{
+    font-size: 5rem;
+    color: var(--main--textpurple);
+  }
+  .head2{
+    font-size: 2rem;
+  }
+  .contact-header > p{
+    font-size: 1.5rem;
+  }
+  .contact-links{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .btn {
+    display: inline-block;
+    padding: 1rem 1rem;
+    border-radius: 2px;
+  }
+/*------ Media viewport -----*/
+@media screen and (max-width: 360px) {
+    html{
+        font-size: 80%;
+    }
+    .project-grid{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 50px;
+    }
+    .contact{
+        padding-left: 50px;
+    }
+    .contact-links{
+        font-size: 1.2rem;
+    }
+    .nav-link{
+        align-items: center;
+    }
+    .skill{
+        max-width: 120px;
+        max-height: 80px;
+    }
+    .about, .aboutme{
+        margin-left: 50px;
+        font-family: var(--main-font);
+    }
+    .about > h1{
+        font-size: 6rem;
+    }
+    .about > p{
+        font-size: 1rem;
+    }
+    .aboutme p{
+        font-size: 1.2rem;
+    }
+    .head1{
+        font-size: 4rem;
+    }
+    .head2{
+        font-size: 1.7rem;
+    }
+    .contact-header > p{
+        font-size: 12px; 
+    }
+    .projects{
+        margin-left: 50px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
