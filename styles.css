@@ -193,7 +193,63 @@ footer {
     border-radius: 2px;
   }
 /*------ Media viewport -----*/
-@media screen and (max-width: 360px) {
+@media (max-width: 360px) {
+    html{
+        font-size: 80%;
+    }
+    .project-grid{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 50px;
+    }
+    .contact{
+        padding-left: 50px;
+    }
+    .contact-links{
+        font-size: 1.2rem;
+    }
+    .nav-link{
+        align-items: center;
+    }
+    .skill{
+        max-width: 120px;
+        max-height: 80px;
+    }
+    .about, .aboutme{
+        margin-left: 50px;
+        font-family: var(--main-font);
+    }
+    .about > h1{
+        font-size: 6rem;
+    }
+    .about > p{
+        font-size: 1rem;
+    }
+    .aboutme p{
+        font-size: 1.2rem;
+    }
+    .head1{
+        font-size: 4rem;
+    }
+    .head2{
+        font-size: 1.7rem;
+    }
+    .contact-header > p{
+        font-size: 12px; 
+    }
+    .projects{
+        margin-left: 50px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/*------ FACEBOOK DImension 412 x 892 ---- */
+@media (max-width: 412px) {
     html{
         font-size: 80%;
     }
