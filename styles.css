@@ -61,6 +61,16 @@ li{
     margin-left: 100px;
     margin-right: 100px;
 }
+.about a{
+    font-size: 30px;
+    color: var(--main--textpurple);
+    text-decoration: underline;
+}
+.about a:hover{
+    color: #2a26ff;
+    font-size: 30px;
+    text-decoration: underline;
+}
 .about h1{
     font-family: var(--main-font);
     font-size: 5rem;
@@ -233,6 +243,9 @@ footer {
     .about > p{
         font-size: 1rem;
     }
+    .about a{
+        font-size: 16px;
+    }
     .aboutme p{
         font-size: 1.2rem;
     }
@@ -288,6 +301,9 @@ footer {
     }
     .about > p{
         font-size: 1rem;
+    }
+    .about a{
+        font-size: 16px;
     }
     .aboutme p{
         font-size: 1.2rem;
