@@ -168,6 +168,13 @@ footer {
     font-family: var(--main-font);
     padding-top: 400px;
   }
+  .contact-header a{
+    font-style: italic;
+    text-decoration: underline;
+  }
+  .contact-header a:hover{
+    color: #2a26ff;
+  }
 
   .head1{
     font-size: 5rem;
@@ -193,7 +200,7 @@ footer {
     border-radius: 2px;
   }
 /*------ Media viewport -----*/
-@media (max-width: 22.5em) {
+@media screen and (max-width: 22.5em) and (max-width: 26.875em) {
     html{
         font-size: 80%;
     }
@@ -249,7 +256,7 @@ footer {
 }
 
 /*------ FACEBOOK DImension 412 x 892 ---- */
-@media (max-width: 25.75em) {
+@media screen and (max-width: 25.75em) {
     html{
         font-size: 80%;
     }
