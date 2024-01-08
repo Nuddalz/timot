@@ -193,7 +193,7 @@ footer {
     border-radius: 2px;
   }
 /*------ Media viewport -----*/
-@media (max-width: 360px) {
+@media (max-width: 22.5em) {
     html{
         font-size: 80%;
     }
@@ -249,7 +249,7 @@ footer {
 }
 
 /*------ FACEBOOK DImension 412 x 892 ---- */
-@media (max-width: 412px) {
+@media (max-width: 25.75em) {
     html{
         font-size: 80%;
     }
